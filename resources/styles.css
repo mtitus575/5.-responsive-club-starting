@@ -1,3 +1,4 @@
+/* Desktop Grid layout */
 body {
     margin: 0;
     padding: 0;
@@ -26,7 +27,7 @@ footer {
     grid-area: footer;
     background-color: rgb(88, 80, 138);
 }
-/* Tablet screen size css */
+/* Tablet Grid layout */
 @media only screen and (max-width: 768px) {
     body {
         margin: 0;
@@ -57,7 +58,7 @@ footer {
         background-color: rgb(88, 80, 138);
     }
 }
-/* Phone screen size css */
+/* Mobile Grid layout */
 @media only screen and (max-width: 425px) {
     body {
         margin: 0;
