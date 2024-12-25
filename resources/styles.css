@@ -140,6 +140,7 @@ a:active {
     justify-items: center;
     overflow: hidden;  
     box-shadow: 1rem 2rem 3rem;
+    margin: 1rem;
 }
 .row1 {
     border-radius: 50%;
@@ -179,4 +180,26 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+}
+
+h1 {
+    padding: 2rem;
+}
+nav {
+    position: sticky;
+    bottom: 5rem;
+    right: 1rem;
+    width: 4rem;
+    float: right;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rebeccapurple; 
+    cursor: pointer; 
+}
+nav:hover {
+    box-shadow: 0.1rem 0.1rem 0.1rem;
+    text-decoration: underline;
+}
+#top:active {
+    color: wheat;
 }
