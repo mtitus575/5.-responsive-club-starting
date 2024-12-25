@@ -4,23 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./resources/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Damion&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Moonrocks&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yuji+Mai&display=swap" rel="stylesheet">
 
     <title>Document</title>
 </head>
 <body>
     <header>
         <ul>
-            <li>Section 1</li>
-            <li>Section 2</li>
-            <li>Section 3</li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#library">Library</a></li>
+            <li><a href="#footer">Contact Us</a></li>
         </ul>
     </header>
     <aside>
-        <section>
-            <h1>Civilian drone flying</h1>
+        <section class="note box">
+            <h2>Civilian drone flying</h2>
             <p>Civilian drone flying has grown significantly, transforming industries and hobbies. Drones are used for various purposes, including aerial photography, surveying, wildlife monitoring, and delivery. Advances in technology have made them more affordable and accessible, appealing to both hobbyists and professionals. However, their increasing use raises concerns about safety, privacy, and regulation, prompting many countries to implement guidelines to ensure responsible operation while encouraging innovation.</p>
         </section>
-        <section>
+        <section id="note" class="box">
             <h2>Things that can be captured</h2>
             <ol>
                 <li>Aerial Footage</li>
@@ -30,30 +31,48 @@
                 <li>Drone Light Shows</li>
             </ol>
         </section>
-        <section>
+        <section class="note box">
             <h2>Improving Your Skills</h2>
             <p>To improve your drone flying skills, practice regularly in open areas to build control, experiment with advanced techniques, and seek feedback through tutorials or drone clubs. Stay updated on software, understand your drone’s features, and focus on learning from each flight to enhance both safety and performance.</p>
+        </section>
+        <section id="events" class="note box">
+            <h2>Upcoming Events</h2>
+            <table>
+                <thead>
+                    <th>Monday</th>
+                    <th>Wednesday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </thead>
+                <tbody>
+                    <td>Drone building 101</td>
+                    <td>Basics of flying</td>
+                    <td>Remote flying</td>
+                    <td>Championship</td> 
+                </tbody>
+                
+            </table>
         </section>
     </aside>
     <!-- Main Section -->
     <main>
-        <h2>Drones</h2>
+        <h1>Drones</h1>
         <section class="drone container">
-            <div class="image-container">
+            <div class="image-container row1">
                 <img src="./resources/images/drones_1.jpg" alt="small drone" width="300px">
-                <h4>Drone name/type</h4>
+                <h4>DJI Mavic</h4>
             </div>
-            <div class="image-container">
+            <div class="image-container row1">
                 <img src="./resources/images/drones_2.jpg" alt="small drone" width="300px">
-                <h4>Drone name/type</h4>
+                <h4>Old School</h4>
             </div>
-            <div class="image-container">
+            <div class="image-container row1">
                 <img src="./resources/images/drones_3.jpg" alt="small drone" width="300px">
-                <h4>Drone name/type</h4>
+                <h4>FPV</h4>
             </div>
-            <div class="image-container">
+            <div class="image-container row1">
                 <img src="./resources/images/drones_4.jpg" alt="small drone" width="300px">
-                <h4>Drone name/type</h4>
+                <h4>DJI Mavic Mini</h4>
             </div>
             <div class="image-container">
                 <img src="./resources/images/drones_5.jpg" alt="small drone" width="300px">
@@ -74,7 +93,7 @@
             
         </section>
         <!-- Footage section -->
-        <h2>Footage</h2>
+        <h2 id="library">Footage</h2>
         <section class="footage container">
             <div class="image-container">
                 <img src="./resources/images/footage_1.jpg" alt="small drone" width="300px">
@@ -103,6 +122,9 @@
         </section>
 
     </main>
-    <footer>Footer</footer>
+    <footer id="footer">
+        <span>&copyLearning WebDev, 2024</span>
+        <span>Made by: Martin</span>
+    </footer>
 </body>
 </html>
