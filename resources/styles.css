@@ -1,16 +1,23 @@
 /* Desktop Grid layout */
+* {
+    box-sizing: border-box;
+    justify-content: center;
+    /* justify-items: center; */
+  }
+
 body {
     margin: 0;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-rows: 10% auto auto 10%;
     grid-template-areas: 
     "header header header header"
     "aside main main main"
     "aside main main main"
     "aside footer footer footer";
 }
+
 aside {
     grid-area: aside;
     background-color: aquamarine;
@@ -89,3 +96,19 @@ footer {
         background-color: rgb(88, 80, 138);
     }
 }
+
+/* Content Styling Section */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.image-container {
+    width: 300px;
+    height: auto;
+    border: 1px solid;
+    justify-items: center;
+    overflow: hidden;  
+}
+
