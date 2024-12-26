@@ -141,6 +141,8 @@ a:active {
     overflow: hidden;  
     box-shadow: 1rem 2rem 3rem;
     margin: 1rem;
+    align-self: center; /*Makes the flex item the size of its CONTENTS. Values=start, end and center*/
+    
 }
 .row1 {
     border-radius: 50%;
