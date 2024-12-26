@@ -26,7 +26,8 @@ aside {
 }
 header {
     grid-area: header;
-    border-bottom: 1px solid;
+    border-bottom: 0.0625rem solid;
+    background-color: #696954;
 }
 main {
     grid-area: main;
@@ -51,19 +52,19 @@ footer {
     }
     aside {
         grid-area: aside;
-        background-color: aquamarine;
+        background-color: rgb(112, 221, 185);
     }
     header {
         grid-area: header;
-        background-color: rgb(106, 147, 134);
+        background-color: rgb(46, 169, 128);
     }
     main {
         grid-area: main;
-        background-color: rgb(99, 169, 87);
+        background-color: rgb(90, 201, 166);
     }
     footer {
         grid-area: footer;
-        background-color: rgb(88, 80, 138);
+        background-color: rgb(95, 189, 159);
     }
 }
 /* Mobile Grid layout */
@@ -82,19 +83,28 @@ footer {
     }
     aside {
         grid-area: aside;
-        background-color: aquamarine;
+        background-color: rgb(154, 108, 149);
     }
     header {
         grid-area: header;
-        background-color: rgb(106, 147, 134);
+        background-color: rgb(179, 130, 170);
+        position: sticky;
+        top: 0;
+        z-index: 6;
     }
     main {
         grid-area: main;
-        background-color: rgb(99, 169, 87);
+        background-color: rgb(132, 113, 130);
     }
     footer {
         grid-area: footer;
         background-color: rgb(88, 80, 138);
+        position: sticky;
+        top: 7.4%;
+        z-index: 6;
+    }
+    .top {
+        visibility: hidden;
     }
 }
 
@@ -141,8 +151,7 @@ a:active {
     overflow: hidden;  
     box-shadow: 1rem 2rem 3rem;
     margin: 1rem;
-    align-self: center; /*Makes the flex item the size of its CONTENTS. Values=start, end and center*/
-    
+    align-self: center; /*Makes the flex item the size of its CONTENTS. Values=start, end and center*/    
 }
 .row1 {
     border-radius: 50%;
@@ -174,7 +183,7 @@ p, ol li {
     margin-bottom: 2rem;
 }
 table, th, td{
-    border: 1px solid;
+    border: 0.0625rem solid;
 }
 
 footer {
@@ -193,9 +202,9 @@ nav {
     right: 1rem;
     width: 4rem;
     float: right;
-    border: 1px solid black;
+    border: 0.0625rem solid black;
     border-radius: 50%;
-    background-color: rebeccapurple; 
+    background-color: rgb(124, 89, 159); 
     cursor: pointer; 
 }
 nav:hover {
