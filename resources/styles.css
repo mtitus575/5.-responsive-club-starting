@@ -11,7 +11,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 10% auto auto 10%;
     grid-template-areas: 
-    "header header header header"
+    "aside header header header"
     "aside main main main"
     "aside main main main"
     "footer footer footer footer";
